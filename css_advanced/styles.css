@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: white;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+
+header img {
+  width: 50px;
+}
+
+header div {
+  display: flex;
+  gap: 40px;
+}
+
+header div a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+.hero-section {
+  position: relative;
+  /* background: linear-gradient(rgb(7, 22, 41), rgb(7, 22, 41)); */
+  /* background-color: rgba(7, 22, 41, 0.4); */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  height: 800px;
+  z-index: 2;
+}
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background:
+    linear-gradient(rgba(7, 22, 41, 0.2), rgba(7, 22, 41, 1)),
+    url("https://html-homework-assets.vercel.app/bg.jpg");
+  filter: grayscale(100%);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero-section h3 {
+  font-size: 70px;
+  text-transform: capitalize;
+}
+
+.hero-section .top-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-section .top-container div {
+  display: flex;
+  gap: 20px;
+}
+
+.hero-section .top-container div span {
+  text-transform: uppercase;
+}
+
+.hero-section .top-container button {
+  text-transform: uppercase;
+  color: white;
+  background-color: #c06dfd;
+  padding: 15px 25px;
+  border-radius: 50px;
+  border: none;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.hero-section .lower-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.hero-section .lower-container h4 {
+  font-size: 30px;
+  font-weight: lighter;
+}
+.hero-section .lower-container h4 span {
+  color: #c06dfd;
+}
+
+.hero-section .lower-container .pros-group {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.pros-group div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.pros-group div img {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.pros-group div span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.pros-group div h5 {
+  font-weight: 500;
+  color: #dfdfdf;
+}
